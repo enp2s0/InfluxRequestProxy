@@ -45,5 +45,4 @@ def ingest():
 	return("200 OK")
 
 # Run the Flask app on startup.
-print(f"Pushing to \"{config.INFLUX_DB}\" at {config.INFLUX_HOST}:{config.INFLUX_PORT}.")
 app.run(debug = config.DEBUG_ENABLE, host = config.PROXY_ADDR, port = config.PROXY_PORT)
